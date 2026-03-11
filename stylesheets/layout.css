@@ -7,14 +7,320 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
-}
-::selection {
-  color: white;
-  background-color: black;
+  background-color: #f6f7f9;
 }
 
-#start {
-  font-family: 'gilroy', system-ui, sans-serif;
+/* Текстовые стили */
+h1 {
+  font-family:
+    'gilroy',
+    sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-weight: 700;
+  font-size: 1.25vw;
+}
+
+h2 {
+  font-family:
+    'gilroy',
+    sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-weight: 600;
+  font-size: 0.97vw;
+}
+
+h3 {
+  font-family:
+    'gilroy',
+    sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-weight: 700;
+  font-size: 0.83vw;
+}
+
+h4 {
+  font-family:
+    'gilroy',
+    sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-weight: 500;
+  font-size: 0.83vw;
+}
+
+h5 {
+  font-family:
+    'gilroy',
+    sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-weight: 600;
+  font-size: 0.69vw;
+}
+
+p {
+  font-family:
+    'gilroy',
+    sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-weight: 500;
+  font-size: 0.97vw;
+}
+
+/* Объявление цветов */
+:root {
+  --text: #1a2254;
+  --c1: #233ad1;
+  --c2: #ebf0f4;
+  --bg1: #ffffff;
+  --bg2: #f6f7f9;
+  --bg3: rgba(147, 160, 171, 0.5);
+  --border: #93a0ab;
+  --tag1: #20a45c;
+  --tag2: #8f460b;
+  --tagBg1: #fff3dd;
+  --tagBg2: #dbe4f6;
+  --tagBg3: #edf8f2;
+  --war: #c23711;
+  --warBorder: rgba(194, 55, 17, 0.5);
+}
+
+/* Header и Footer */
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  height: 100vh;
+}
+
+.pageEl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  background-color: var(--bg1);
+  height: 6.11vw;
+  width: 100%;
+  padding: 0 3.19vw 0 3.19vw;
+  color: var(--text);
+}
+
+/* topBar */
+
+#search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 56.38vw;
+  gap: 0.69vw;
+}
+
+.textArea {
+  display: flex;
+  width: 100%;
+  border-radius: 0.9vw;
+  background-color: var(--bg1);
+  border: 1px solid var(--bg3);
+  padding: 0.62vw 1.11vw 0.62vw 1.11vw;
+}
+
+.selectEl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 0.83vw;
+}
+
+.textInAreaF {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--border);
+  /* color: var(--text); */
+}
+
+.textInAreaF p {
+  width: 100%;
+}
+
+.textInAreaT {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--text);
+}
+
+.textInAreaT p {
+  width: 100%;
+}
+
+.checkbox1 {
+  width: 1.31vw;
+  height: 1.31vw;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#appearanceSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.34vw;
+}
+
+#appearanceSwitch button {
+  width: 2.43vw;
+  height: 2.43vw;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.9vw;
+  background-size: contain;
+}
+
+#appearanceSwitch button:nth-of-type(1) {
+  background-image: url(../icons/appearanceLinesYesIcon.svg);
+}
+
+#appearanceSwitch button:nth-of-type(2) {
+  background-image: url(../icons/appearanceSquareNoIcon.svg);
+}
+
+.lineBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.83vw;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.83vw;
+  color: var(--text);
+}
+
+#results1 {
+  gap: 0.34vw;
+}
+
+.drop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg1);
+  padding: 0.62vw 1.11vw 0.62vw 1.11vw;
+  border-radius: 0.9vw;
+  border: 1px solid var(--bg3);
+  cursor: pointer;
+}
+
+#sortBy {
+  width: 13.05vw;
+}
+
+#formatDrop {
+  border: 1px solid var(--c1);
+  color: var(--c1);
+}
+
+#loadDrop {
+  border: 1px solid var(--c1);
+  color: var(--c1);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c1);
+  padding: 0.62vw 1.11vw 0.62vw 1.11vw;
+  border-radius: 0.9vw;
+  color: var(--bg1);
+  cursor: pointer;
+}
+
+#printButton {
+  justify-content: space-between;
+  width: 8.05vw;
+}
+
+#printButton img {
+  width: 1.25vw;
+  height: 1.25vw;
+}
+
+#topBar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55vw;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70.06vw;
 }

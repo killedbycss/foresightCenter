@@ -244,6 +244,7 @@ p {
   height: 1.31vw;
   background-repeat: no-repeat;
   cursor: pointer;
+  user-select: none;
 }
 
 #appearanceSwitch {
@@ -263,11 +264,13 @@ p {
 }
 
 #appearanceSwitch button:nth-of-type(1) {
-  background-image: url(../icons/appearanceLinesNoIcon.svg);
+  background-image: url(../contents/appearanceLinesNoIcon.svg);
+  user-select: none;
 }
 
 #appearanceSwitch button:nth-of-type(2) {
-  background-image: url(../icons/appearanceSquareYesIcon.svg);
+  background-image: url(../contents/appearanceSquareYesIcon.svg);
+  user-select: none;
 }
 
 .lineBar {
@@ -303,10 +306,12 @@ p {
 
 .dropArrow {
   height: 0, 78vw;
+  user-select: none;
 }
 
 #docIcon {
   height: 1.18vw;
+  user-select: none;
 }
 
 #sortBy {
@@ -407,6 +412,7 @@ p {
   width: 100%;
   padding: 0 0 0 1.11vw;
   color: var(--text);
+  user-select: none;
 }
 
 .reset {
@@ -485,6 +491,18 @@ p {
   border: 0.06vw solid var(--border);
 }
 
+.cardSquare1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 22.84vw;
+  padding: 1.73vw 1.38vw 1.73vw;
+  gap: 69vw;
+  border-radius: 2.08vw;
+  border: 0.06vw solid var(--border);
+}
+
 .tagsSquare {
   display: flex;
   flex-wrap: wrap;
@@ -531,6 +549,10 @@ p {
   gap: 0.2vw;
 }
 
+#workIcon {
+  user-select: none;
+}
+
 .workSquare {
   display: flex;
   flex-direction: column;
@@ -566,6 +588,7 @@ p {
 .checkbox2 {
   width: 2vw;
   height: 2vw;
+  user-select: none;
 }
 
 /* Сборка */

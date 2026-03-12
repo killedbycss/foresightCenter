@@ -28,7 +28,7 @@
     <section class="pageContent">
       <section class="pageEl">
         <img src="" alt="" />
-        <button></button>
+        <section class="button"></section>
       </section>
       <section id="cardspagessearchFilter">
         <section id="cardspagesSearch">
@@ -39,7 +39,7 @@
                 <button class="appearance"></button>
               </section>
               <section id="search">
-                <section class="textArea">
+                <section class="textArea" id="searchText">
                   <section class="textInAreaF">
                     <p>Поиск по ФИО</p>
                   </section>
@@ -67,16 +67,16 @@
                 </section>
                 <section class="drop" id="sortBy">
                   <p>По ФИО</p>
-                  <img src="icons/arrowIcon.svg" alt="" />
+                  <img class="dropArrow" src="icons/arrowIcon.svg" alt="" />
                 </section>
                 <section class="results" id="results1">
                   <section class="drop" id="formatDrop">
                     <h2>.xls</h2>
-                    <img src="icons/arrowIcon.svg" alt="" />
+                    <img class="dropArrow" src="icons/arrowIcon.svg" alt="" />
                   </section>
                   <section class="drop" id="loadDrop">
-                    <h2>.xls</h2>
-                    <img src="icons/arrowIcon.svg" alt="" />
+                    <img id="docIcon" src="icons/docIcon.svg" alt="" />
+                    <img class="dropArrow" src="icons/arrowIcon.svg" alt="" />
                   </section>
                   <section class="button" id="printButton">
                     <img src="icons/printIcon.svg" alt="" />
@@ -91,7 +91,111 @@
             <section id="pages"></section>
           </section>
         </section>
-        <section id="filterMenu"></section>
+        <section id="filterMenu">
+          <section class="groupFilter">
+            <section class="textPadding">
+              <section class="reset">
+                <h2>Тип деятельности</h2>
+              </section>
+            </section>
+            <section class="contentFilter">
+              <section class="drop" id="category">
+                <p>Категория</p>
+                <img class="dropArrow" src="icons/arrowIcon.svg" alt="" />
+              </section>
+              <section class="drop" id="subcategory">
+                <p>Подкатегория</p>
+                <img class="dropArrow" src="icons/arrowIcon.svg" alt="" />
+              </section>
+              <section class="textPadding">
+                <p>Ключевые слова:</p>
+              </section>
+              <section class="textArea" id="textFilter">
+                <section class="textInAreaF">
+                  <p>Поиск по ключевым словам</p>
+                </section>
+              </section>
+            </section>
+          </section>
+          <section class="groupFilter">
+            <section class="textPadding"><h2>Место работы</h2></section>
+            <section class="contentFilter">
+              <section id="placeDrops">
+                <section class="drop" id="country">
+                  <p>Страна</p>
+                  <img class="dropArrow" src="icons/arrowIcon.svg" alt="" />
+                </section>
+                <section class="drop" id="city">
+                  <p>Город</p>
+                  <img class="dropArrow" src="icons/arrowIcon.svg" alt="" />
+                </section>
+              </section>
+              <section id="sector">
+                <p>Сектор:</p>
+                <section id="sectors">
+                  <section class="selectEl">
+                    <img class="checkbox1" src="icons/checkbox1NoIcon.svg" />
+                    <section class="textInAreaT" id="sectorText">
+                      <p>Частный</p>
+                    </section>
+                  </section>
+                  <section class="selectEl">
+                    <img class="checkbox1" src="icons/checkbox1NoIcon.svg" />
+                    <section class="textInAreaT" id="sectorText">
+                      <p>Научный</p>
+                    </section>
+                  </section>
+                  <section class="selectEl">
+                    <img class="checkbox1" src="icons/checkbox1NoIcon.svg" />
+                    <section class="textInAreaT" id="sectorText">
+                      <p>Государственный</p>
+                    </section>
+                  </section>
+                </section>
+              </section>
+              <section class="textPadding">
+                <p>Организация:</p>
+              </section>
+              <section class="textArea" id="textFilter">
+                <section class="textInAreaF">
+                  <p>Наименование организации...</p>
+                </section>
+              </section>
+              <section class="textArea" id="textFilter">
+                <section class="textInAreaF">
+                  <p>Наименование подразделения...</p>
+                </section>
+              </section>
+              <section class="textArea" id="textFilter">
+                <section class="textInAreaF">
+                  <p>Наименование должности...</p>
+                </section>
+              </section>
+              <section class="drop" id="level">
+                <p>Уровень должности</p>
+                <img class="dropArrow" src="icons/arrowIcon.svg" alt="" />
+              </section>
+            </section>
+          </section>
+          <section class="groupFilter">
+            <section class="textPadding"><h2>Достижения и заслуги</h2></section>
+            <section class="contentFilter">
+              <section class="textPadding">
+                <p>Ученая степень:</p>
+              </section>
+              <section class="textArea" id="textFilter">
+                <section class="textInAreaF">
+                  <p>Наименование степени...</p>
+                </section>
+              </section>
+              <section class="textPadding">
+                <p>Ученая степень:</p>
+              </section>
+            </section>
+          </section>
+          <section class="button"></section>
+          <img class="resize" src="icons/resizeUpIcon.svg" alt="" />
+        </section>
       </section>
       <section class="pageEl">
         <h2>НИУ ВШЭ / ИСИЭЗ / Форсайт-центр</h2>

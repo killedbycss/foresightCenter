@@ -180,8 +180,12 @@ p {
   width: 100%;
   border-radius: 0.9vw;
   background-color: var(--bg1);
-  border: 1px solid var(--bg3);
   padding: 0.62vw 1.11vw 0.62vw 1.11vw;
+  cursor: text;
+}
+
+#searchText {
+  border: 1px solid var(--bg3);
 }
 
 .selectEl {
@@ -277,8 +281,17 @@ p {
   background-color: var(--bg1);
   padding: 0.62vw 1.11vw 0.62vw 1.11vw;
   border-radius: 0.9vw;
-  border: 1px solid var(--bg3);
   cursor: pointer;
+  height: 2.43vw;
+  color: var(--text);
+}
+
+.dropArrow {
+  height: 0, 78vw;
+}
+
+#docIcon {
+  height: 1.18vw;
 }
 
 #sortBy {
@@ -288,11 +301,13 @@ p {
 #formatDrop {
   border: 1px solid var(--c1);
   color: var(--c1);
+  width: 5.5vw;
 }
 
 #loadDrop {
   border: 1px solid var(--c1);
   color: var(--c1);
+  width: 5vw;
 }
 
 .button {
@@ -323,4 +338,106 @@ p {
   align-items: flex-start;
   justify-content: center;
   width: 70.06vw;
+}
+
+#filterMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg1);
+  padding: 0.97vw 0.69vw 0.97vw 0.69vw;
+  border-radius: 0.9vw;
+  gap: 1.45vw;
+  width: 21.11vw;
+}
+
+.groupFilter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.41vw;
+}
+
+.contentFilter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--c2);
+  width: 19.72vw;
+  border-radius: 0.9vw;
+  padding: 0.55vw;
+  gap: 0.41vw;
+}
+
+#category {
+  width: 8.68vw;
+}
+
+#subcategory {
+  width: 11.04vw;
+}
+
+#textFilter {
+  width: 18.61vw;
+}
+
+.textPadding {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 0 0 1.11vw;
+  color: var(--text);
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--border);
+}
+
+#placeDrops {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#country {
+  width: 9.09vw;
+}
+
+#city {
+  width: 8.95vw;
+  background-color: var(--bg3);
+}
+
+#sector {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--text);
+  width: 18.61vw;
+  gap: 0.48vw;
+  padding: 0 1.11vw 0 1.11vw;
+}
+
+#sectors {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.48vw;
+}
+
+#sectorText {
+  width: 10vw;
+}
+
+#level {
+  width: 13.54vw;
 }

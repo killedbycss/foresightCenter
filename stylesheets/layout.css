@@ -164,6 +164,21 @@ p {
   color: var(--text);
 }
 
+#logoutButton {
+  background-color: var(--bg1);
+  flex-wrap: wrap;
+  border: 0.06vw solid var(--c1);
+  color: var(--c1);
+  height: 2.43vw;
+  padding: 0.69vw 0.83vw 0.55vw 0.83vw;
+  margin-top: 1vw;
+}
+
+.pageEl img {
+  width: 13.47vw;
+  height: 4.51vw;
+}
+
 /* topBar */
 
 #search {
@@ -185,7 +200,7 @@ p {
 }
 
 #searchText {
-  border: 1px solid var(--bg3);
+  border: 0.06vw solid var(--bg3);
 }
 
 .selectEl {
@@ -248,11 +263,11 @@ p {
 }
 
 #appearanceSwitch button:nth-of-type(1) {
-  background-image: url(../icons/appearanceLinesYesIcon.svg);
+  background-image: url(../icons/appearanceLinesNoIcon.svg);
 }
 
 #appearanceSwitch button:nth-of-type(2) {
-  background-image: url(../icons/appearanceSquareNoIcon.svg);
+  background-image: url(../icons/appearanceSquareYesIcon.svg);
 }
 
 .lineBar {
@@ -299,13 +314,13 @@ p {
 }
 
 #formatDrop {
-  border: 1px solid var(--c1);
+  border: 0.06vw solid var(--c1);
   color: var(--c1);
   width: 5.5vw;
 }
 
 #loadDrop {
-  border: 1px solid var(--c1);
+  border: 0.06vw solid var(--c1);
   color: var(--c1);
   width: 5vw;
 }
@@ -339,6 +354,8 @@ p {
   justify-content: center;
   width: 70.06vw;
 }
+
+/* filterMenu */
 
 #filterMenu {
   display: flex;
@@ -440,4 +457,150 @@ p {
 
 #level {
   width: 13.54vw;
+}
+
+#hindexGap {
+  gap: 0.36vw;
+}
+
+#hindex {
+  color: var(--c1);
+}
+
+#resize {
+  cursor: pointer;
+}
+
+/* cards */
+
+.cardSquare {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 22.84vw;
+  padding: 1.73vw 1.38vw 1.73vw;
+  gap: 0.69vw;
+  border-radius: 2.08vw;
+  border: 0.06vw solid var(--border);
+}
+
+.tagsSquare {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 0.35vw;
+}
+
+.tag {
+  padding: 0.2vw 0.48vw 0.2vw 0.48vw;
+  background-color: var(--tagBg1);
+  border-radius: 10vw;
+  color: var(--tag2);
+}
+
+#sectorTag {
+  color: var(--tag1);
+  background-color: var(--tagBg3);
+}
+
+#categoryTag {
+  color: var(--c1);
+  background-color: var(--tagBg2);
+}
+
+.infoSquare {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.2vw;
+  color: var(--text);
+}
+
+.infoSquare h4 {
+  color: var(--border);
+}
+
+#workPlace {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.2vw;
+}
+
+.workSquare {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.2vw;
+  color: var(--text);
+}
+
+.addSquare {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#addInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.2vw;
+  color: var(--text);
+}
+
+.addValues {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2vw;
+}
+
+.checkbox2 {
+  width: 2vw;
+  height: 2vw;
+}
+
+/* Сборка */
+
+#cardspagessearchFilter {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 1.38vw 0 4.3vw;
+  gap: 1.38vw;
+}
+
+#cardspagesSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 1.38vw;
+}
+
+#cardsPages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.38vw;
+}
+
+#cardSquareList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--bg1);
+  border-radius: 2.06vw;
+  padding: 0.9vw;
+  gap: 0.34vw;
 }

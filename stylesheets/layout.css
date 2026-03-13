@@ -485,7 +485,18 @@ p {
   align-items: flex-start;
   justify-content: center;
   width: 22.84vw;
-  padding: 1.73vw 1.38vw 1.73vw;
+  padding: 1.38vw 1.73vw;
+  gap: 0.69vw;
+  border-radius: 2.08vw;
+  border: 0.06vw solid var(--border);
+}
+
+.cardLine {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 69.44vw;
+  padding: 0.35vw 1.73vw 1vw 1.73vw;
   gap: 0.69vw;
   border-radius: 2.08vw;
   border: 0.06vw solid var(--border);
@@ -503,7 +514,29 @@ p {
   border: 0.06vw solid var(--border);
 }
 
-.tagsSquare {
+#tagsNameWorkLine {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.48vw;
+}
+
+#tagsNameWorkAddLine {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#nameWorkLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.13vw 0 0.13vw 0;
+  gap: 0.69vw;
+}
+
+.tags {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -529,7 +562,7 @@ p {
   background-color: var(--tagBg2);
 }
 
-.infoSquare {
+.info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -538,7 +571,11 @@ p {
   color: var(--text);
 }
 
-.infoSquare h4 {
+.cardLine .info {
+  width: 24.51vw;
+}
+
+.info h4 {
   color: var(--border);
 }
 
@@ -550,16 +587,26 @@ p {
 }
 
 #workIcon {
+  width: 1vw;
+  height: 0.95vw;
   user-select: none;
 }
 
-.workSquare {
+.work {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 0.2vw;
   color: var(--text);
+}
+
+.cardLine .work {
+  width: 26.94vw;
+}
+
+.work h4 {
+  width: 100%;
 }
 
 .addSquare {
@@ -576,6 +623,7 @@ p {
   justify-content: center;
   gap: 0.2vw;
   color: var(--text);
+  width: 10.55vw;
 }
 
 .addValues {
@@ -626,4 +674,16 @@ p {
   border-radius: 2.06vw;
   padding: 0.9vw;
   gap: 0.34vw;
+}
+
+#cardLineList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--bg1);
+  border-radius: 2.06vw;
+  padding: 0.9vw;
+  gap: 0.34vw;
+  width: 100%;
 }

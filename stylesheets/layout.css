@@ -292,6 +292,14 @@ p {
   gap: 0.34vw;
 }
 
+.dropDown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.27vw;
+}
+
 .drop {
   display: flex;
   align-items: center;
@@ -307,6 +315,62 @@ p {
 .dropArrow {
   height: 0, 78vw;
   user-select: none;
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg1);
+  border-radius: 0.9vw;
+  width: 15.13vw;
+  padding: 0.69vw 0.36vw;
+}
+
+#downOn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.41vw 0.9vw;
+  width: 100%;
+  background-color: var(--c2);
+}
+
+#downOff {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.41vw 0.9vw;
+  width: 100%;
+}
+
+#downOn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.41vw 0.9vw;
+  width: 100%;
+  background-color: var(--c2);
+}
+
+#sortByDown {
+  gap: 0.69vw;
+}
+
+#sortBySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c2);
+  border-radius: 0.9vw;
+  width: 100%;
+  gap: 0.69vw;
+  padding: 0.41vw 0.69vw;
 }
 
 #docIcon {
@@ -686,4 +750,26 @@ p {
   padding: 0.9vw;
   gap: 0.34vw;
   width: 100%;
+}
+
+/* Вход */
+
+#wasteEl {
+  background: none;
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg1);
+  padding: 0.97vw 0.69vw 0.97vw 0.69vw;
+  border-radius: 0.9vw;
+  gap: 1.45vw;
+  width: 21.11vw;
+}
+
+#signText {
+  border: 0.06vw solid var(--bg3);
 }

@@ -477,6 +477,7 @@ p {
   padding: 0 0 0 1.11vw;
   color: var(--text);
   user-select: none;
+  gap: 0.5vw;
 }
 
 .reset {
@@ -758,7 +759,7 @@ p {
   background: none;
 }
 
-.sign {
+.login {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -770,6 +771,53 @@ p {
   width: 21.11vw;
 }
 
-#signText {
+#loginText {
   border: 0.06vw solid var(--bg3);
+}
+
+.loginLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.27vw;
+}
+
+#loginVar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.69vw;
+}
+
+.loginAreas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.69vw;
+  width: 100%;
+}
+
+#loginButton {
+  padding: 0.69vw 0.83vw 0.55vw 0.83vw;
+  width: 9.86vw;
+}
+
+.textPadding h4 {
+  color: var(--war);
+}
+
+#loginWrong1 {
+  border: 0.06vw solid var(--war);
 }

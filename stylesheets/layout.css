@@ -143,42 +143,6 @@ p {
   --warBorder: rgba(194, 55, 17, 0.5);
 }
 
-/* Header и Footer */
-.pageContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  height: 100vh;
-}
-
-.pageEl {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  background-color: var(--bg1);
-  height: 6.11vw;
-  width: 100%;
-  padding: 0 3.19vw 0 3.19vw;
-  color: var(--text);
-}
-
-#logoutButton {
-  background-color: var(--bg1);
-  flex-wrap: wrap;
-  border: 0.06vw solid var(--c1);
-  color: var(--c1);
-  height: 2.43vw;
-  padding: 0.69vw 0.83vw 0.55vw 0.83vw;
-  margin-top: 1vw;
-}
-
-.pageEl img {
-  width: 13.47vw;
-  height: 4.51vw;
-}
-
 /* topBar */
 
 #search {
@@ -325,7 +289,7 @@ p {
   background-color: var(--bg1);
   border-radius: 0.9vw;
   width: 15.13vw;
-  padding: 0.69vw 0.36vw;
+  padding: 0.69vw 0;
 }
 
 #downOn {
@@ -359,6 +323,7 @@ p {
 
 #sortByDown {
   gap: 0.69vw;
+  padding: 0.69vw 0.36vw;
 }
 
 #sortBySection {
@@ -388,10 +353,45 @@ p {
   width: 5.5vw;
 }
 
-#loadDrop {
+#formatDown {
+  width: 5vw;
   border: 0.06vw solid var(--c1);
   color: var(--c1);
+}
+
+#loadDown {
+  width: auto;
+  border: 0.06vw solid var(--c1);
+  padding-left: 0.69vw;
+  padding-right: 0.69vw;
+  gap: 0.35vw;
+}
+
+#loadDrop {
+  border: 0.06vw solid var(--c1);
   width: 5vw;
+}
+
+#loadDropColor {
+  color: var(--c1);
+}
+
+#pagesSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.35vw;
+  color: var(--c1);
+}
+
+.pagesSelectArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c2);
+  padding: 0.35vw;
+  border-radius: 0.25vw;
 }
 
 .button {
@@ -567,18 +567,6 @@ p {
   border: 0.06vw solid var(--border);
 }
 
-.cardSquare1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 22.84vw;
-  padding: 1.73vw 1.38vw 1.73vw;
-  gap: 69vw;
-  border-radius: 2.08vw;
-  border: 0.06vw solid var(--border);
-}
-
 #tagsNameWorkLine {
   display: flex;
   flex-direction: column;
@@ -704,7 +692,44 @@ p {
   user-select: none;
 }
 
+/* Header и Footer */
+
+.pageEl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  background-color: var(--bg1);
+  height: 6.11vw;
+  width: 100%;
+  padding: 0 3.19vw 0 3.19vw;
+  color: var(--text);
+}
+
+#logoutButton {
+  background-color: var(--bg1);
+  flex-wrap: wrap;
+  border: 0.06vw solid var(--c1);
+  color: var(--c1);
+  height: 2.43vw;
+  padding: 0.69vw 0.83vw 0.55vw 0.83vw;
+  margin-top: 1vw;
+}
+
+.pageEl img {
+  width: 13.47vw;
+  height: 4.51vw;
+}
+
 /* Сборка */
+
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  height: 100vh;
+}
 
 #cardspagessearchFilter {
   display: flex;
@@ -820,4 +845,11 @@ p {
 
 #loginWrong1 {
   border: 0.06vw solid var(--war);
+}
+
+.eye {
+  width: 1.18vw;
+  height: 0.83vw;
+  background-image: url(../contents/closeEyeIcon.svg);
+  background-size: cover;
 }
